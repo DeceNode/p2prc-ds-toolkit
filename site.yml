@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+
+  tasks:
+    - name: Install PIP
+      shell: "apt-get -y install --reinstall python3-pip"
+      become: true
+    
+    - name: Install Data Science Toolkit Libraries
+      shell: "pip install --upgrade numpy pandas scikit-learn matplotlib seaborn pillow beautifulsoup4 scrapy nltk scipy"
+      become: true
