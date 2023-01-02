@@ -9,3 +9,4 @@ main:
       ansible_user: master
       ansible_ssh_pass: password
       ansible_sudo_pass: password
+      
